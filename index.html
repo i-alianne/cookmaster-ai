@@ -3,43 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>CookMaster AI</title>
   </head>
   <body>
-    <header>
-      <h1>CookMaster AI</h1>
-      <p>
-        Have an ingredient and don't know what to make? Find out the perfect
-        recipe with just one click. Tell us what you have, and we'll tell you
-        what to cook.
-      </p>
-    </header>
+    <div class="container">
+      <header>
+        <h1>🧑‍🍳 CookMaster AI</h1>
+        <p>
+          Have an ingredient and don't know what to make? <br />Tell us what you
+          have, and we'll tell you what to cook.
+        </p>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter an ingredient..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" value="Submit" />
-      </form>
-      <div>Tomato Basil Pasta</div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter an ingredient..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+        <div class="recipe">Tomato Basil Pasta</div>
+      </main>
 
-    <footer>
-      This project was coded with 💜 by
-      <a href="https://github.com/i-alianne" target="_blank"
-        >Alianne Dosal Allison</a
-      >
-      and is
-      <a href="https://github.com/i-alianne/cookmaster-ai" target="_blank"
-        >open-sourced on GitHub</a
-      >.
-    </footer>
+      <footer>
+        This project was coded with 💜 by
+        <a href="https://github.com/i-alianne" target="_blank"
+          >Alianne Dosal Allison</a
+        >
+        and is
+        <a href="https://github.com/i-alianne/cookmaster-ai" target="_blank"
+          >open-sourced on GitHub</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
