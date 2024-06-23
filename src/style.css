@@ -8,7 +8,7 @@ a {
 }
 
 .container {
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 600px;
 }
 
@@ -29,15 +29,25 @@ header p {
   font-size: 16px;
   font-weight: 100px;
   text-align: center;
+  font-style: italic;
 }
 
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  display: flex;
   margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  opacity: 0.6;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .instructions {
@@ -63,6 +73,7 @@ form {
 
 .submit-button:hover {
   background: #79bd8f;
+  cursor: pointer;
 }
 
 .recipe {
@@ -74,8 +85,27 @@ form {
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.03);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
   font-size: 13px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

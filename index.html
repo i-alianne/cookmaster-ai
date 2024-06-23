@@ -31,19 +31,23 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter an ingredient..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="instructions"
-          />
-          <input type="submit" value="Submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter an ingredient..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="instructions"
+            />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: tomato, goat cheese or watermelon</div>
+        </div>
+
+        <div class="recipe hidden" id="recipe"></div>
       </main>
 
       <footer>
