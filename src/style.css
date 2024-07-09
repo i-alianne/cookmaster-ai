@@ -1,5 +1,6 @@
 body {
-  background-color: #fff0a5;
+  background-image: url("/img/food-background.jpg");
+  background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
